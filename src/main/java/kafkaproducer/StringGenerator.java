@@ -14,7 +14,7 @@ public class StringGenerator
       
         Random r = new Random();
         Properties props = new Properties();
-        props.put("metadata.broker.list", "ems.winext.com:9092,endnode1:9093");
+        props.put("metadata.broker.list", "10.0.0.17:9092,10.0.0.18:9093");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
         //props.put("partitioner.class", "main.java.SimplePartitioner");
         props.put("request.required.acks", "1");
